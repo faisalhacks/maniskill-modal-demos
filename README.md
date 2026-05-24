@@ -9,7 +9,7 @@ Total Modal spend across all four: **~$3.80**.
 
 ## 1. VLM — Molmo points, ManiSkill picks
 
-<video src="https://github.com/faisalhacks/maniskill-modal-demos/raw/main/vlm/rollout.mp4" controls width="640"></video>
+<video src="https://github.com/faisalhacks/maniskill-modal-demos/releases/download/video/rollout.mp4" controls width="640"></video>
 
 Molmo-7B-D looks at a rendered RGB of a Franka Panda + red cube, returns
 `<point x="..." y="...">` coordinates, the pixel is deprojected to a 3D
@@ -22,7 +22,7 @@ grasp. L4 GPU, ~$1, pipeline PASS.
 
 ## 2. RL — PPO from scratch on PickCube
 
-<video src="https://github.com/faisalhacks/maniskill-modal-demos/raw/main/rl/state_rollout.mp4" controls width="640"></video>
+<video src="https://github.com/faisalhacks/maniskill-modal-demos/releases/download/video/state_rollout.mp4" controls width="640"></video>
 
 PPO trained on `PickCube-v1` (Franka, state observations) for 4.1M timesteps
 on a single L4. Evaluation success rate **0.75 across 16 stochastic episodes**.
@@ -34,7 +34,7 @@ Uses ManiSkill's official PPO baseline; ~$1.50 of Modal spend.
 
 ## 3. Octo — 136.7M generalist policy on WidowX
 
-<video src="https://github.com/faisalhacks/maniskill-modal-demos/raw/main/octo/rollout_0.mp4" controls width="640"></video>
+<video src="https://github.com/faisalhacks/maniskill-modal-demos/releases/download/video/rollout_0.mp4" controls width="640"></video>
 
 Octo-Small 1.5 (T5 text encoder + transformer policy, 136.7M params total)
 running zero-shot on the SimplerEnv WidowX `PutEggplantInBasketScene-v1`
@@ -47,7 +47,7 @@ digital-twin. Pipeline PASS — all 5 rollouts complete the 120-step horizon;
 
 ## 4. OpenVLA — 7B VLA on the same WidowX scene
 
-<video src="https://github.com/faisalhacks/maniskill-modal-demos/raw/main/openvla/rollout_0.mp4" controls width="640"></video>
+<video src="https://github.com/faisalhacks/maniskill-modal-demos/releases/download/video/rollout_01.mp4" controls width="640"></video>
 
 OpenVLA-7B in bf16 on Modal A100-40GB, same `PutEggplantInBasketScene-v1`
 task as Octo. **1/5 task success** (episode 4 succeeded at step 59). ~247 ms
