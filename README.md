@@ -9,7 +9,9 @@ Total Modal spend across all four: **~$3.80**.
 
 ## 1. VLM — Molmo points, ManiSkill picks
 
-<video src="https://github.com/faisalhacks/maniskill-modal-demos/releases/download/video/rollout.mp4" controls width="640"></video>
+
+https://github.com/user-attachments/assets/35d60fac-5540-4d9f-a678-6ec637f4be76
+
 
 Molmo-7B-D looks at a rendered RGB of a Franka Panda + red cube, returns
 `<point x="..." y="...">` coordinates, the pixel is deprojected to a 3D
@@ -22,7 +24,9 @@ grasp. L4 GPU, ~$1, pipeline PASS.
 
 ## 2. RL — PPO from scratch on PickCube
 
-<video src="https://github.com/faisalhacks/maniskill-modal-demos/releases/download/video/state_rollout.mp4" controls width="640"></video>
+
+https://github.com/user-attachments/assets/f0ffbfaf-a8ac-42b0-a223-a38b1a2512f1
+
 
 PPO trained on `PickCube-v1` (Franka, state observations) for 4.1M timesteps
 on a single L4. Evaluation success rate **0.75 across 16 stochastic episodes**.
@@ -34,7 +38,9 @@ Uses ManiSkill's official PPO baseline; ~$1.50 of Modal spend.
 
 ## 3. Octo — 136.7M generalist policy on WidowX
 
-<video src="https://github.com/faisalhacks/maniskill-modal-demos/releases/download/video/rollout_0.mp4" controls width="640"></video>
+
+https://github.com/user-attachments/assets/b9b0021e-bf19-422a-9b4d-99dcefac6fbf
+
 
 Octo-Small 1.5 (T5 text encoder + transformer policy, 136.7M params total)
 running zero-shot on the SimplerEnv WidowX `PutEggplantInBasketScene-v1`
@@ -47,7 +53,9 @@ digital-twin. Pipeline PASS — all 5 rollouts complete the 120-step horizon;
 
 ## 4. OpenVLA — 7B VLA on the same WidowX scene
 
-<video src="https://github.com/faisalhacks/maniskill-modal-demos/releases/download/video/rollout_01.mp4" controls width="640"></video>
+
+https://github.com/user-attachments/assets/5d2084b4-7349-4819-bf5e-f5f5c825bccb
+
 
 OpenVLA-7B in bf16 on Modal A100-40GB, same `PutEggplantInBasketScene-v1`
 task as Octo. **1/5 task success** (episode 4 succeeded at step 59). ~247 ms
